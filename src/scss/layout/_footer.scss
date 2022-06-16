@@ -1,1 +1,48 @@
+.footer{
+    color: $lightGreen;
+    background-color: $darkGreen;
+    display: flex;
+    justify-content: center;
+}
+    
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    ;
+}
+    
+.footer .store{
+        margin: 56px 0 10px 0;
+    }
+
+.footer .us{
+        margin: 10px 0 10px 0;
+    }
+
+.footer .contact{
+        margin: 10px 0 56px 0;
+    }
+
+.footer .socialmedia{
+        height: 24px;
+        display: flex;
+        gap: 5px;
+    }
+
+.footer a{
+    text-decoration: none;
+    color: $lightGreen;
+    padding: 20px 20px 20px 0;
+}
+
+.footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.footer .item{
+    font-size: 14px;
+    line-height: 10px;
+}
 
