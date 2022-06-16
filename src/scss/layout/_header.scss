@@ -6,12 +6,15 @@
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 389px;
 
   &__logo{
     margin-top: 19px;
     width: 213px;
     height: 96px;
+
+    @media all and (min-width: 768px){
+      margin-top: 39px;
+    }
   }
 
   &__title{
@@ -20,16 +23,36 @@
     margin: 62px 0px;
     padding: 5px;
     font-weight: 600;
+
+    @media all and (min-width: 768px){
+      align-self: flex-start;
+      margin-left: 147px;
+      margin-top: 229px;
+      margin-bottom: 12px;
+      font-size: 36px;
+      width: 430px;
+      height: 112px;
+      line-height: 50px;
+      padding: 0;
+    }
   }
 
   &__button{
     background-color: $darkGreen;
+    font-size: 16px;
     height: 48px;
     width: 176px;
     border: none;
     padding: 0;
+    margin-bottom: 64px;
     &:hover{
       background-color: $lightGreen;
+    }
+
+    @media all and (min-width: 768px){
+      align-self: flex-start;
+      margin-left: 147px;
+      margin-bottom: 286px;
     }
   }
 
@@ -51,4 +74,9 @@
   color: $darkGreen;
   width: 24px;
   height: 24px;
+
+  @media all and (min-width: 768px) {
+    left: 82px;
+    top: 75px;
+  }
 }
