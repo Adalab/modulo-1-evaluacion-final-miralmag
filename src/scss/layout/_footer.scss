@@ -4,46 +4,56 @@
     display: flex;
     justify-content: center;
 }
-    
-.footer .container{
-    display: flex;
-    flex-direction: column;
-    ;
+
+.footer-container{
+display: flex;
+flex-direction: column;
+margin-left: 18%;
+line-height: normal;
+
+&__store{
+    padding-bottom: 5px;
+    margin: 56px 0 10px 0;
 }
-    
-.footer .store{
-        margin: 56px 0 10px 0;
+
+&__us{
+    padding-bottom: 5px;
+    margin: 10px 0 10px 0;
     }
 
-.footer .us{
-        margin: 10px 0 10px 0;
+&__contact{
+    margin: 10px 0 56px 0;
     }
+}
 
-.footer .contact{
-        margin: 10px 0 56px 0;
-    }
-
-.footer .socialmedia{
-        height: 24px;
+.socialmedia{   
+        margin-top: 12px;  
         display: flex;
         gap: 5px;
+        padding-bottom: 5px;
     }
+
+.footer .fa-brands{
+    height: 26px;
+    width: 24px;
+}    
 
 .footer a{
     text-decoration: none;
     color: $lightGreen;
-    padding: 20px 20px 20px 0;
+    padding: 5px auto;
 }
 
 .footer .title{
     font-size: 20px;
     font-weight: 600;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 2px;
 }
 
 .footer .item{
     font-size: 14px;
-    line-height: 10px;
+    line-height: 20px;
 }
 
 .footer .fa-arrow-up{
