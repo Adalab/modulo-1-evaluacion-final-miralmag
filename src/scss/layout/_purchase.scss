@@ -1,0 +1,48 @@
+.purchase{
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase .text-container{
+        background-color: $lightGrey;
+        color: $darkGreen;
+        text-align: center;
+        
+        &__title{
+            margin: 87px 27px 0 27px;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 5px;
+        }
+
+        &__description{
+            font-size: 14px;
+            margin: 0 27px 30px 27px;
+            padding: 10px;
+    }
+
+        &__button{
+            background-color: $darkGreen;
+            height: 48px;
+            width: 176px;
+            border: none;
+            margin-bottom: 92px;
+        }
+
+        &__link{
+            color: #fff;
+            font-weight: 600;
+            padding: 12px 24px;
+            text-transform: capitalize;
+          }
+}
+
+.purchase .img-container{
+        height: 304px;
+        width: 100vw;
+        background-image: url("../images/creando-espacios.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
