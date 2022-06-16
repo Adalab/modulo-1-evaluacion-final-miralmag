@@ -26,7 +26,10 @@
     height: 48px;
     width: 176px;
     border: none;
-    
+    padding: 0;
+    &:hover{
+      background-color: $lightGreen;
+    }
   }
 
   &__link{
@@ -34,6 +37,9 @@
     font-weight: 600;
     padding: 12px 24px;
     text-transform: capitalize;
+    &:hover{
+      color: $darkGreen;
+    }
   }
 }
 
