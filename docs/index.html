@@ -3,66 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Ejercicio de evaluación final</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d7b554f88.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    
+   <header class="header" id="header">
+       
+     <nav class="header__barra-nav">
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+         <a href="https://adalab.es"><i class="fa-solid fa-bars" title=""></i></a>
+         
+         <ul class="menu">
+           <a class="menu__link" href="https://adalab.es">
+             <li class="menu__item">Producto</li>
+           </a>
+           <a class="menu__link" href="https://adalab.es">
+             <li class="menu__item">Colecciones</li>
+           </a>
+           <a class="menu__link" href="https://adalab.es">
+             <li class="menu__item">Tienda</li>
+           </a>
+           <a class="menu__link" href="https://adalab.es">
+             <li class="menu__item">Inicio</li>
+           </a>
+         </ul>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+         <img class="header__logo" src="./assets/images/logo.png" alt="Logo de Open Spaces" title="Open Spaces">
 
-          </li>
-        </ul>
-      </main>
+     </nav>
+       
+     <div class="hero">
+       <h1 class="hero__title">Disfruta creando espacios</h1>
+       <button class="hero__button"><a class="hero__link" href="https://adalab.es">Comprar ahora</a></button>
+     </div>
+     
+     </header>
+    
+    <main>
+      <section class="spaces">
+          <h2 class="spaces__title">Volverse organizado se siente mejor con <span class="uppercase">open spaces</span></h2>
+          
+          <div class="product">
+            <img class="product__icon" src="./assets/images/icon_1.png" alt="Icono de mesa" title="Lo que necesitas">
+            <h3 class="product__title">Lo que necesitas</h3>
+            <p class="product__description">Una línea de productos diseñada para todos tus espacios</p>
+          </div>
+          
+          <div class="eco">
+            <img class="eco__icon" src="./assets/images/icon_2.png" alt="Icono de bolsa" title="Materias primas">
+            <h3 class="eco__title">Materias primas sustentables</h3>
+            <p class="eco__description bag">Todos los productos con materias primas sustentables</p>
+          </div>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+          <div class="support">
+            <img class="support__icon" src="./assets/images/icon_3.png" alt="Icono de guía" title="Guía">
+            <h3 class="support__title">Guía</h3>
+            <p class="support__description ">Soporte y asesoramiento para ayudarte con tu objetivo</p>
+          </div>
+        </section>
+      <section class="delivery">
+          <img class="delivery__icon" src="./assets/images/icon_4.png" alt="Icono de envío" title="Envío">
+          <h2 class="delivery__title">Envío gratis garantizado</h2>
+          <p class="delivery__text">Envío gratis en compras desde 100</p>
+          <h4 class="delivery__link-container"><a href="https://adalab.es" class="delivery__link">Comprar ahora</a></h4>
+        </section>
+      <section class="purchase">
+          
+        <div class="text-container">
+            <h2 class="text-container__title">Disfruta creando espacios</h2>
+            <p class="text-container__description">Una línea de productos diseñados para todos tus espacios</p>
+            <button class="text-container__button"><a class="text-container__link" href="https://adalab.es.">Comprar ahora</a></button>
+          </div>
+          
+          <div class="img-container">
+          </div>
+        
+        </section>
+    </main>
 
-        </small>
-      </footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <nav class="footer-container__store">
+              <h4 class="title">Tienda</h4>
+              <ul>
+                  <a href="https://adalab.es">
+                      <li class="item">Productos</li>
+                  </a>
+                  <a href="https://adalab.es">
+                      <li class="item">Cajoneras</li>
+                  </a>
+                  <a href="https://adalab.es">
+                      <li class="item">Para toda la casa</li>
+                  </a>
+                  <a href="https://adalab.es">
+                      <li class="item">Habitaciones</li>
+                  </a>
+              </ul>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+            </nav>
+            <nav class="footer-container__us">
+                <h4 class="title">Nosotros</h4>
+              <ul>
+                  <a href="https://adalab.es">
+                      <li class="item">Nuestra guía</li>
+                  </a>
+                  <a href="https://adalab.es">
+                      <li class="item">Nuestro diseño</li>
+                  </a>
+                  <a href="https://adalab.es">
+                      <li class="item">Nuestra historia</li>
+                  </a>
+                  <a href="https://adalab.es">
+                      <li class="item">Ayuda</li>
+                  </a>
+              </ul>
+            </nav>
+            <nav class="footer-container__contact">
+                <h4 class="title">Contacto</h4>
+              <ul>
+                  <a href="https://adalab.es">
+                      <li class="item">ayuda@openspaces.com</li>
+                  </a>
+                  <a href="https://adalab.es">
+                      <li class="item">Socios</li>
+                  </a>
+              </ul>
+                <div class="socialmedia">
+                <a href="https://adalab.es"><i class="fa-brands fa-linkedin" title="Linkedin"></i></a>
+                <a href="https://adalab.es"><i class="fa-brands fa-instagram" title="Instagram"></i></a>
+                <a href="https://adalab.es">
+                    <i class="fa-brands fa-twitter" title="Twitter"></i></a>
+                </div>
+            </nav>
+        </div>
+        <a href="#header"><i class="fa-solid fa-arrow-up" title="Volver arriba"></i></a>
+    </footer>
+
+    
   </body>
 </html>
