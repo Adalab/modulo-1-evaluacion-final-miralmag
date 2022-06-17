@@ -6,11 +6,21 @@
     grid-template-columns: 1fr;
     text-align: center;
 
+    @media all and (min-width: 900px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     &__title{
         margin: 41px 47px 37px 45px;
         font-size: 24px;
         font-weight: 600;
         line-height: normal;
+
+        @media all and (min-width: 900px) {
+            grid-column: 1 / 4;         
+            width: 535px;
+            margin: 41px auto 37px auto;
+            }
         }
     }
 
@@ -21,6 +31,11 @@
     flex-direction: column;
     align-items: center;
     line-height: 20px;
+
+    @media all and (min-width: 900px) {
+        margin: auto;
+        justify-content: flex-start;
+    }
 }
 
 .product{
@@ -82,6 +97,10 @@
         width: 208px;
         height: 96px;
         margin-bottom: 18px;
+
+        @media all and (min-width: 900px) {
+            margin-bottom: 40px;
+        }
     }
 }
 
