@@ -1,3 +1,20 @@
+
+.menu-container{
+  display: none;
+
+  @media all and (min-width: 1728px){
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+
+  &__link{
+    color: $darkGreen;
+    padding: 10px;
+  }
+}
+
 .header{
   width: 100vw;
   display: flex;
@@ -6,14 +23,41 @@
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  @media all and (min-width: 1728px){
+    align-items: flex-start;
+  }
+
+  &__menu{
+    @media all and (min-width: 1728px){
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 39px;
+      color: $darkGreen;
+      height: 96px;
+      margin-left: 270px;  
+    }
+  }
 
   &__logo{
     margin-top: 19px;
     width: 213px;
     height: 96px;
 
-    @media all and (min-width: 768px){
+    @media all and (min-width: 900px){
       margin-top: 39px;
+    }
+
+    @media all and (min-width: 1728px){
+      // margin-top: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
     }
   }
 
@@ -24,7 +68,7 @@
     padding: 5px;
     font-weight: 600;
 
-    @media all and (min-width: 768px){
+    @media all and (min-width: 900px){
       align-self: flex-start;
       margin-left: 147px;
       margin-top: 229px;
@@ -34,6 +78,10 @@
       height: 112px;
       line-height: 50px;
       padding: 0;
+    }
+
+    @media all and (min-width: 1728px){
+      margin: 266px 0 12px 280px;
     }
   }
 
@@ -49,10 +97,14 @@
       background-color: $lightGreen;
     }
 
-    @media all and (min-width: 768px){
+    @media all and (min-width: 900px){
       align-self: flex-start;
       margin-left: 147px;
       margin-bottom: 286px;
+    }
+
+    @media all and (min-width: 1728px){
+      margin: 0 0 451px 280px;
     }
   }
 
@@ -75,8 +127,14 @@
   width: 24px;
   height: 24px;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 900px) {
     left: 82px;
     top: 75px;
   }
+
+  @media all and (min-width: 1728px){
+    display: none;
+  }
 }
+
+
