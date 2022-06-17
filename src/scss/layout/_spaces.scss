@@ -12,7 +12,7 @@
 
     &__title{
         margin: 41px 47px 37px 45px;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         line-height: normal;
 
@@ -23,7 +23,7 @@
             }
 
         @media all and (min-width: 1728px) {
-            font-size: 36px;
+            font-size: 2.25rem;
             width: 799px;
             margin: 70px auto 60px auto;
             }
@@ -62,12 +62,13 @@
     }
 
     &__title{
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 5px;
         padding: 5px;
+        line-height: normal;
         
         @media all and (min-width: 1728px) {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
     }
 
@@ -95,7 +96,7 @@
     }
 
     &__title{
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 5px;
         padding: 5px;
 
@@ -104,7 +105,7 @@
         }
 
         @media all and (min-width: 1728px) {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
         
     }
@@ -132,12 +133,12 @@
     }
 
     &__title{
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 5px;
         padding: 5px;
 
         @media all and (min-width: 1728px) {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
     }
 

@@ -8,98 +8,96 @@
 }
 
 .purchase .text-container{
-        background-color: $lightGrey;
-        color: $darkGreen;
-        text-align: center;
+    background-color: $lightGrey;
+    color: $darkGreen;
+    text-align: center;
+
+    @media all and (min-width: 1728px) {
+        text-align: left;
+    }
+        
+    &__title{
+        margin: 87px 27px 0 27px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 5px;
+
+        @media all and (min-width: 900px) {
+            font-size: 1.875rem;
+        }
 
         @media all and (min-width: 1728px) {
+            font-size: 2.25rem;
+            margin: 176px 144px 0 280px;  
+            padding: 5px 0 10px 0;  
+            width: 430px;
             text-align: left;
-        }
-        
-        &__title{
-            margin: 87px 27px 0 27px;
-            font-size: 24px;
-            font-weight: 600;
-            padding: 5px;
-
-            @media all and (min-width: 900px) {
-                font-size: 30px;
-            }
-
-            @media all and (min-width: 1728px) {
-                font-size: 36px;
-                margin: 176px 144px 0 280px;  
-                padding: 5px 0 10px 0;  
-                width: 430px;
-                text-align: left;
             }
         }
 
-        &__description{
-            font-size: 14px;
-            margin: 0 27px 30px 27px;
-            padding: 15px;
+    &__description{
+        font-size: 0.875rem;
+        margin: 0 27px 30px 27px;
+        padding: 15px;
 
-            @media all and (min-width: 900px) {
-                margin: 0 250px 30px 250px;
-                font-size: 14px;     
-            }
+        @media all and (min-width: 900px) {
+            margin: 0 250px 30px 250px;   
+        }
 
-            @media all and (min-width: 1728px) {
-                font-size: 16px;
-                margin-left: 280px; 
-                width: 281px;  
-                text-align: left;
-                padding: 0;
-                line-height: normal;
-            }
+        @media all and (min-width: 1728px) {
+            font-size: 1rem;
+            margin-left: 280px; 
+            width: 281px;  
+            text-align: left;
+            padding: 0;
+            line-height: normal;
+        }
     }
 
-        &__button{
-            background-color: $darkGreen;
-            height: 48px;
-            width: 176px;
-            border: none;
-            margin-bottom: 92px;
-            padding: 0;
-            &:hover{
-                background-color: $lightGreen;
-            }
-
-            @media all and (min-width: 1728px) {
-                margin-left: 280px; 
-                margin-bottom: 171px;
-            } 
+    &__button{
+        background-color: $darkGreen;
+        height: 48px;
+        width: 176px;
+        border: none;
+        margin-bottom: 92px;
+        padding: 0;
+        &:hover{
+            background-color: $lightGreen;
         }
 
-        &__link{
-            color: #fff;
-            font-weight: 600;
-            font-size: 16px;
-            padding: 12px 24px;
-            text-transform: capitalize;
-            &:hover{
-                color: $darkGreen;
-            }
-          }
+        @media all and (min-width: 1728px) {
+            margin-left: 280px; 
+            margin-bottom: 171px;
+        } 
+    }
+
+    &__link{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 12px 24px;
+        text-transform: capitalize;
+        &:hover{
+            color: $darkGreen;
+        }
+    }
 }
 
 .purchase .img-container{
-        height: 304px;
-        width: 100vw;
-        background-image: url("../images/creando-espacios.jpg");
-        background-size: cover;
-        background-position: center bottom;
-        background-repeat: no-repeat;
+    height: 304px;
+    width: 100vw;
+    background-image: url("../images/creando-espacios.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 
-        @media all and (min-width: 900px) {
-            height: 474px;    
-        }
-
-        @media all and (min-width: 1728px) {
-            height: 571px; 
-            
-        }
+    @media all and (min-width: 900px) {
+        height: 474px;    
     }
+
+    @media all and (min-width: 1728px) {
+        height: 571px; 
+    }
+}
 
 

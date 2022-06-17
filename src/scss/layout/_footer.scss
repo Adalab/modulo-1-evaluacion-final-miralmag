@@ -23,14 +23,11 @@
         margin-left: 0;
         width: 0;
         gap: 20px;
-
-        @media all and (min-width: 1728px) {
-            margin: 131px 352px 131px 352px;
-        }
     }
 
     @media all and (min-width: 1728px) {
         gap: 200px;
+        margin: 131px 352px 131px 352;
     }
 
     &__store{
@@ -64,11 +61,11 @@
 }
 
 .socialmedia{
-        margin-top: 12px;
-        display: flex;
-        gap: 5px;
-        padding-bottom: 5px;
-    }
+    margin-top: 12px;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+}
 
 .footer .fa-brands{
     height: 26px;
@@ -82,24 +79,24 @@
 }
 
 .footer .title{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     padding-bottom: 5px;
     padding-top: 2px;
     width: 208px;
 
     @media all and (min-width: 1728px) {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }
 
 .footer .item{
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     width: 208px;
 
     @media all and (min-width: 1728px) {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
