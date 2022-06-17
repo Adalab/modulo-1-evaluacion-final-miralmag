@@ -8,7 +8,11 @@
     &__icon{
         width: 120px;
         height: 120px;
-        margin-top: 46px;   
+        margin-top: 46px;  
+       
+        @media all and (min-width: 1728px) {
+            margin-top: 61px;
+        } 
     }
 
     &__title{
@@ -16,16 +20,32 @@
         font-weight: 600;
         margin-top: 10px;
         padding: 5px;
+
+        @media all and (min-width: 900px) {
+            font-size: 30px;
+        }
+
+        @media all and (min-width: 1728px) {
+            font-size: 36px;
+        }
     }
 
     &__text{
         font-size: 14px;
         padding: 14px;
         padding-bottom: 30px;
+
+        @media all and (min-width: 1728px) {
+            font-size: 16px;
+        }
     }
 
     &__link-container{
         margin: 5px 0 63px 0;
+        
+        @media all and (min-width: 1728px) {
+            margin-bottom: 78px;
+        }
     }
 
     &__link{

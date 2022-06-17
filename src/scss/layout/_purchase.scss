@@ -1,27 +1,57 @@
 .purchase{
     display: flex;
     flex-direction: column;
+
+    @media all and (min-width: 1728px) {
+        flex-direction: row;    
+    }
 }
 
 .purchase .text-container{
         background-color: $lightGrey;
         color: $darkGreen;
         text-align: center;
+
+        @media all and (min-width: 1728px) {
+            text-align: left;
+        }
         
         &__title{
             margin: 87px 27px 0 27px;
             font-size: 24px;
             font-weight: 600;
             padding: 5px;
+
+            @media all and (min-width: 900px) {
+                font-size: 30px;
+            }
+
+            @media all and (min-width: 1728px) {
+                font-size: 36px;
+                margin: 176px 144px 0 280px;  
+                padding: 5px 0 10px 0;  
+                width: 430px;
+                text-align: left;
+            }
         }
 
         &__description{
             font-size: 14px;
             margin: 0 27px 30px 27px;
-            padding: 10px;
+            padding: 15px;
 
-            @media all and (min-width:900px) {
-                margin: 0 250px 30px 250px;    
+            @media all and (min-width: 900px) {
+                margin: 0 250px 30px 250px;
+                font-size: 14px;     
+            }
+
+            @media all and (min-width: 1728px) {
+                font-size: 16px;
+                margin-left: 280px; 
+                width: 281px;  
+                text-align: left;
+                padding: 0;
+                line-height: normal;
             }
     }
 
@@ -35,11 +65,18 @@
             &:hover{
                 background-color: $lightGreen;
             }
+
+            @media all and (min-width: 1728px) {
+                margin-left: 280px; 
+                margin-bottom: 171px;
+            }
+            
         }
 
         &__link{
             color: #fff;
             font-weight: 600;
+            font-size: 16px;
             padding: 12px 24px;
             text-transform: capitalize;
             &:hover{
@@ -56,8 +93,13 @@
         background-position: center bottom;
         background-repeat: no-repeat;
 
-        @media all and (min-width:900px) {
+        @media all and (min-width: 900px) {
             height: 474px;    
+        }
+
+        @media all and (min-width: 1728px) {
+            width: 874px; 
+            height: 571px;   
         }
     }
 
