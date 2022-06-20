@@ -101,14 +101,17 @@
 }
 
 .footer .fa-arrow-up{
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    right: 28px;
-    bottom: 16px;
-    color: white;
+    display:none;
+    
 
-    @media all and (min-width: 900px) {
+    @media all and (min-width: 900px) {  
+        display: block;
+        position: absolute; 
+        height: 24px;
+        width: 24px;
+        right: 28px;
+        bottom: 16px;
+        color: white;
         right: 57px;
         bottom: 89px;
     }

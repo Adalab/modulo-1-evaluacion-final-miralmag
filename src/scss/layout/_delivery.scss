@@ -10,6 +10,10 @@
         height: 120px;
         margin-top: 46px;  
        
+        @media all and (min-width: 900px) {
+            order: 0;
+        }
+
         @media all and (min-width: 1728px) {
             margin-top: 61px;
         } 
@@ -23,6 +27,7 @@
 
         @media all and (min-width: 900px) {
             font-size: 1.875rem;
+            order: 2;
         }
 
         @media all and (min-width: 1728px) {
@@ -34,6 +39,11 @@
         font-size: 0.875rem;
         padding: 14px;
         padding-bottom: 30px;
+        margin-bottom: 20px;
+
+        @media all and (min-width: 900px) {
+            order: 1;
+        }
 
         @media all and (min-width: 1728px) {
             font-size: 1rem;
@@ -43,15 +53,26 @@
     &__link-container{
         margin: 5px 0 63px 0;
         
+        @media all and (min-width: 900px) {
+            order: 3;
+        }
+
         @media all and (min-width: 1728px) {
             margin-bottom: 78px;
         }
     }
 
+    
     &__link{
-        color: white;
+        background-color: $darkGreen;
+        color: #fff;
+        font-weight: 600;
         font-size: 1rem;
-        padding: 12px 24px 12px 24px;
-        text-decoration: underline;
+        padding: 12px 24px;
+        text-transform: capitalize;
+        
+
+        
+        
     }
 }
